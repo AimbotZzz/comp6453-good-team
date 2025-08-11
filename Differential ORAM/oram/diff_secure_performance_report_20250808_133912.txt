@@ -1,0 +1,50 @@
+Differential ORAM Performance Report
+================================================================================
+Test time: 2025-08-08 13:39:08
+
+[Full-path]
+  Config blocks=16, H=5, B=4:
+    read=0.038ms, write=0.011ms, mixed=0.032ms, stash=49
+  Config blocks=32, H=6, B=4:
+    read=0.090ms, write=0.048ms, mixed=0.084ms, stash=150
+  Config blocks=32, H=16, B=8:
+    read=0.546ms, write=0.029ms, mixed=1.001ms, stash=580
+  Config blocks=64, H=16, B=8:
+    read=2.002ms, write=0.045ms, mixed=1.433ms, stash=1161
+  Config blocks=128, H=17, B=8:
+    read=5.347ms, write=0.451ms, mixed=4.853ms, stash=6972
+
+[Differential]
+  Config blocks=16, H=5, B=4:
+    read=0.008ms, write=0.007ms, mixed=0.006ms, stash=0
+    Speedup (vs Full-path): read=4.79x, write=1.61x, mixed=4.90x
+  Config blocks=32, H=6, B=4:
+    read=0.010ms, write=0.010ms, mixed=0.010ms, stash=1
+    Speedup (vs Full-path): read=8.78x, write=4.92x, mixed=8.58x
+  Config blocks=32, H=16, B=8:
+    read=0.013ms, write=0.016ms, mixed=0.013ms, stash=0
+    Speedup (vs Full-path): read=41.49x, write=1.82x, mixed=76.07x
+  Config blocks=64, H=16, B=8:
+    read=0.013ms, write=0.012ms, mixed=0.013ms, stash=0
+    Speedup (vs Full-path): read=154.20x, write=3.91x, mixed=111.53x
+  Config blocks=128, H=17, B=8:
+    read=0.015ms, write=0.014ms, mixed=0.014ms, stash=0
+    Speedup (vs Full-path): read=365.99x, write=31.90x, mixed=348.01x
+
+[Differential + Dummy + Ring]
+  Config blocks=16, H=5, B=4:
+    read=0.048ms, write=0.020ms, mixed=0.043ms, stash=667
+    Speedup (vs Full-path): read=0.80x, write=0.57x, mixed=0.74x
+  Config blocks=32, H=6, B=4:
+    read=0.046ms, write=0.025ms, mixed=0.089ms, stash=1552
+    Speedup (vs Full-path): read=1.97x, write=1.89x, mixed=0.94x
+  Config blocks=32, H=16, B=8:
+    read=0.313ms, write=0.107ms, mixed=0.650ms, stash=12739
+    Speedup (vs Full-path): read=1.74x, write=0.27x, mixed=1.54x
+  Config blocks=64, H=16, B=8:
+    read=0.550ms, write=0.131ms, mixed=1.138ms, stash=23651
+    Speedup (vs Full-path): read=3.64x, write=0.35x, mixed=1.26x
+  Config blocks=128, H=17, B=8:
+    read=0.888ms, write=0.291ms, mixed=1.902ms, stash=40592
+    Speedup (vs Full-path): read=6.02x, write=1.55x, mixed=2.55x
+
