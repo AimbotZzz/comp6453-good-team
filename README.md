@@ -15,6 +15,6 @@ This repository contains two separate implementations of Path ORAM variants, eac
   - Grouped eviction for faster block placement.
   - Adjustable deterministic eviction scheduling period.
 - **Contents:**
-  - `Demo.mov` — quick interactive demo (correctness, ciphertext-at-rest, runtime comparison with different parameters).
+  - `demo.mov` — quick interactive demo (correctness, ciphertext-at-rest, runtime comparison with different parameters).
   - `README.md` — detailed explanation of the deterministic implementation, optimizations, and test coverage.
   - Source code and test files.
