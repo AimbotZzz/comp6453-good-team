@@ -18,3 +18,5 @@ This repository contains two separate implementations of Path ORAM variants, eac
   - `demo.mov` — quick interactive demo (correctness, ciphertext-at-rest, runtime comparison with different parameters).
   - `README.md` — detailed explanation of the deterministic implementation, optimizations, and test coverage.
   - Source code and test files.
+
+（The repository is updated by a single uploader as we complete our work locally to avoid merge conflicts.）
